@@ -49,9 +49,9 @@ input     group                    "4а. БЕЗУБЫТОК И ТРЕЙЛИНГ
 - [x] `DistanceSL`: Какой отступ SL от границы канала? (пунктов)
 
 input     group                    "5. ВТОРОСТЕПЕННЫЕ НАСТРОЙКИ"
-- [ ] `IsDeletePending`: Удалять отложки в ночную паузу
-- [ ] `PauseTimeStart`: Время начала ночной паузы
-- [ ] `PauseTimeStop`: Время окончания ночной паузы
+- [x] `IsDeletePending`: Удалять отложки в ночную паузу
+- [x] `PauseTimeStart`: Время начала ночной паузы
+- [x] `PauseTimeStop`: Время окончания ночной паузы
 - [ ] `gFlgDrawZZ`: Рисовать график ZigZag?
 - [ ] `gFlgLinesHL`: Рисовать линии High и Low?
 - [ ] `gFlgLevelsHL`: Рисовать уровни сделок?
