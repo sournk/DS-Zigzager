@@ -1,0 +1,48 @@
+___VERIFICATION___======= ВЕРИФИКАЦИЯ СЧЕТА =======
+gProtectionKey=
+_2____========= ОСНОВНЫЕ НАСТРОЙКИ ========
+gMagic=6546541
+gComment=ZZ_USDJPY
+SetTypePos=3
+Type_lot=0
+Lot=0.01
+Money_loss=30.0
+_3____======= НАСТРОЙКИ ИНДИКАТОРОВ ==========
+_3а___=--------- Настройки ZigZag ----------
+gTimeFrameZZ=1440
+gBarsBack=20
+ExtDepth=12
+ExtBackstep=3
+_3б___=---- Настройки MA и ParabolicSAR ----
+gTimeFrameInd=15
+SetIndicator=1
+maPeriod=15
+ParabolicStep=0.02
+ParabolicMax=0.2
+_4____========= УПРАВЛЕНИЕ ОРДЕРАМИ ========
+gFlgOrdPendings=1
+gFlgOrdMarket=1
+gTPmode=0
+gTP=500
+gFiboTP=1.5
+gOpenShift=100
+gMaxStopLoss=250
+gFlgMASLinMoment=0
+gLifeTime=100
+Close_TPord_on_Time=0
+Hour_closing=22
+_4а___=------- Безубыток и Трейлинг --------
+trailingStop=0
+BBUSize=125
+BBUSizePip=25
+TrailingStep=500
+iTralBars=5
+DistanceSL=150
+_5____======= ВТОРОСТЕПЕННЫЕ НАСТРОЙКИ =======
+IsDeletePending=1
+PauseTimeStart=23:30
+PauseTimeStop=01:30
+gFlgDrawZZ=1
+gFlgLinesHL=0
+gFlgLevelsHL=0
+Use_comment=0
