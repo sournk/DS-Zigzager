@@ -13,6 +13,7 @@
 class CDKPositionInfo : public CPositionInfo {
 protected:
   CDKSymbolInfo                      m_symbol;
+  void                               UpdatedSymbolCached();
 public:
   double                             GetPriceDeltaCurrentAndOpenToOpen();                   // Returns delta between pos current price and pos open price to OPEN new pos with same dir
   int                                GetPriceDeltaCurrentAndOpenToOpenPoint();              // Returns delta in point between pos current price and pos open price to OPEN new pos with same dir
@@ -49,6 +50,11 @@ public:
   bool                               SelectByIndex(const int index);  
 };
 
+void CDKPositionInfo::UpdatedSymbolCached(){
+  if (m_symbol.Name() == NULL) 
+    m_symbol.Name(this.Symbol());
+}
+
 //+------------------------------------------------------------------+
 //+------------------------------------------------------------------+
 //+------------------------------------------------------------------+
@@ -61,25 +67,25 @@ public:
 
 bool CDKPositionInfo::Select(const string symbol) {
   bool res = CPositionInfo::Select(symbol);
-  m_symbol.Name(this.Symbol());
+  UpdatedSymbolCached();
   return res;
 }
 
 bool CDKPositionInfo::SelectByMagic(const string symbol,const ulong magic) {
   bool res = CPositionInfo::SelectByMagic(symbol, magic);
-  m_symbol.Name(this.Symbol());
+  UpdatedSymbolCached();
   return res;
 }
 
 bool CDKPositionInfo::SelectByTicket(const ulong ticket) {
   bool res = CPositionInfo::SelectByTicket(ticket);
-  m_symbol.Name(this.Symbol());
+  UpdatedSymbolCached();
   return res;
 }
 
 bool CDKPositionInfo::SelectByIndex(const int index) {
   bool res = CPositionInfo::SelectByIndex(index);
-  m_symbol.Name(this.Symbol());
+  UpdatedSymbolCached();
   return res;
 }
 
