@@ -52,10 +52,10 @@ input     group                    "5. ВТОРОСТЕПЕННЫЕ НАСТРО
 - [x] `IsDeletePending`: Удалять отложки в ночную паузу
 - [x] `PauseTimeStart`: Время начала ночной паузы
 - [x] `PauseTimeStop`: Время окончания ночной паузы
-- [ ] `gFlgDrawZZ`: Рисовать график ZigZag?
+- [x] `gFlgDrawZZ`: Рисовать график ZigZag и уровни торговли SL+TP.
 - [ ] `gFlgLinesHL`: Рисовать линии High и Low?
 - [ ] `gFlgLevelsHL`: Рисовать уровни сделок?
-- [ ] `11`.LL: Log Level
+- [x] `11`.LL: Log Level
           string                   InpBP                                 = "DSZZ";
           uint                     InpCommentUpdateDelayMs               = 5*1000;                              // Update comment delay
 
