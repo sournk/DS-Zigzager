@@ -32,3 +32,4 @@
 *.app
 mq5/Include/DKStdLib/.DS_Store
 *.ex5
+*.DS_Store
